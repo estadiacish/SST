@@ -3,13 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avanza SST | Seguridad, Salud y Medio Ambiente</title>
+  <title>CISSPRO | Seguridad, Salud y Medio Ambiente</title>
   <meta name="description" content="Avanza SST - Soluciones integrales en Seguridad, Salud en el Trabajo y Medio Ambiente. Protegemos lo que importa.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/icon.ico" type="image/png" sizes="32x32">
 </head>
+
+<a 
+  href="#"
+  class="whatsapp-float"
+  id="whatsappBtn"
+  target="_blank"
+  aria-label="Contactar por WhatsApp"
+>
+    <span class="whatsapp-tooltip" id="whatsappTooltip">
+        ¿Te ayudamos?
+    </span>
+
+    <span class="whatsapp-pulse"></span>
+
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M19.11 17.64c-.29-.15-1.72-.85-1.99-.95-.27-.1-.47-.15-.67.15-.2.29-.77.95-.95 1.14-.17.2-.35.22-.64.07-.29-.15-1.24-.46-2.36-1.47-.87-.78-1.46-1.75-1.63-2.04-.17-.29-.02-.45.13-.6.13-.13.29-.35.44-.52.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.29-1.05 1.03-1.05 2.51s1.08 2.92 1.23 3.12c.15.2 2.13 3.26 5.16 4.57zm-3.07-14.64C9.41 3 4 8.41 4 15.04c0 2.65.87 5.11 2.34 7.1L5 29l7.07-1.86a12 12 0 0 0 3.97.66c6.63 0 12.04-5.41 12.04-12.04C28.08 8.41 22.67 3 16.04 3z"/>
+    </svg>
+</a>
+
 <body>
 
   <!-- ========== NAVIGATION ========== -->
@@ -17,12 +37,10 @@
     <div class="container">
       <a href="#inicio" class="navbar-logo" aria-label="Avanza SST - Inicio">
         <div class="logo-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-          </svg>
+          <img src="images/icon.png" alt="">
         </div>
         <div>
-          Avanza SST
+          CISPRO
           <span>Seguridad, Salud y Medio Ambiente</span>
         </div>
       </a>
@@ -31,7 +49,20 @@
         <a href="#inicio" class="active">Inicio</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#objetivo">Objetivo</a>
-        <a href="#servicios">Servicios</a>
+         <li class="nav-dropdown">
+            <a href="#" class="nav-link">Servicios
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px;">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="medio-ambiente.html" class="nav-dropdown-item">Medio Ambiente y Manejo de Residuos</a>
+              <a href="seguridad-industrial.html" class="nav-dropdown-item">Seguridad Industrial y Protección Civil</a>
+              <a href="sistemas-gestion.html" class="nav-dropdown-item">Sistemas de Gestión y Capacitación</a>
+              <a href="consultoria.html" class="nav-dropdown-item">Consultoría Especializada</a>
+              <a href="servicios-integrales.html" class="nav-dropdown-item">Servicios Integrales</a>
+            </div>
+          </li>
       </div>
 
       <div class="navbar-cta">
@@ -72,7 +103,7 @@
           <span class="dot"></span>
           Comprometidos con tu seguridad
         </div>
-        <h1>Creamos procesos diseñados<span class="highlight"> ara necesidades especificas</span></h1>
+        <h1>Creamos procesos diseñados<span class="highlight"> para necesidades especificas</span></h1>
         <p class="hero-description">
           Impulsamos el talento humano dentro de la organización con estrategias a la medida que fomentan el crecimiento y el desarrollo de su equipo.
         </p>
@@ -139,14 +170,8 @@
     <div class="container">
       <div class="about-visual reveal-left">
         <div class="about-image-wrapper">
-          <div class="about-image-pattern"></div>
           <div class="about-image-content">
-            <span class="big-number">SST</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-            </svg>
-            <h3>Equipo Profesional</h3>
-            <p>Especialistas certificados en SST y medio ambiente</p>
+            <img src="images/Index.png" alt="Equipo de trabajo">
           </div>
         </div>
       </div>
@@ -155,7 +180,10 @@
         <div class="section-label">Quienes Somos</div>
         <h2>Expertos en seguridad, salud y medio ambiente al servicio de tu empresa</h2>
         <p>
- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id ut, tempora ea vel aperiam facilis deleniti ab ipsum nobis? Quas sunt a blanditiis vitae saepe eveniet ipsa, amet quis, soluta explicabo non autem assumenda placeat illo nam earum culpa tempora?
+        Somos un equipo multidisciplinario especializado en blindar la operación de los sectores
+        Industrial e Hidrocarburos. En AVANZA SST, transformamos el cumplimiento normativo
+        en una ventaja estratégica, anticipándonos a los desafíos de un mercado en constante
+        evolución.
         </p>
 
         <div class="about-features">
@@ -165,6 +193,10 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
               </svg>
             </div>
+            <div class="about-feature-text">
+              <h4>Certificaciones y distintivos</h4>
+              <p>Contamos con certificaciones reconocidas y distintivos de calidad en seguridad y medio ambiente.</p>
+            </div>
           </div>
           <div class="about-feature-item">
             <div class="about-feature-icon">
@@ -173,19 +205,8 @@
               </svg>
             </div>
             <div class="about-feature-text">
-              <h4>Enfoque integral</h4>
-              <p>Abordamos la seguridad, salud y medio ambiente como un sistema unificado para maximizar la proteccion.</p>
-            </div>
-          </div>
-          <div class="about-feature-item">
-            <div class="about-feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-              </svg>
-            </div>
-            <div class="about-feature-text">
-              <h4>Actualizacion constante</h4>
-              <p>Nuestro equipo se mantiene al dia con la normatividad vigente y las mejores practicas del sector.</p>
+              <h4>Diagnostico y asesoría en seguridad e higiene y medio ambiental</h4>
+              <p>Realizamos diagnósticos completos de seguridad e higiene ocupacional y medio ambiente, brindando asesoría personalizada para mejorar las condiciones laborales.</p>
             </div>
           </div>
         </div>
@@ -198,10 +219,8 @@
     <div class="container">
       <div class="objective-header reveal">
         <div class="section-label">Nuestro Objetivo</div>
-        <h2>Crear entornos de trabajo seguros, saludables y sostenibles</h2>
-        <p>
-          Nos enfocamos en tres pilares fundamentales que guian cada una de nuestras acciones y servicios profesionales.
-        </p>
+        <h2>Creamos procesos diseñados para necesidades especificas </h2>
+        <p>Garantizar el cumplimiento normativo y la seguridad de su empresa, brindando la certeza legal necesaria para una operación libre de riesgos y sanciones        </p>
       </div>
 
       <div class="objective-grid stagger-children">
@@ -213,7 +232,7 @@
             </svg>
           </div>
           <h3>Prevenir riesgos laborales</h3>
-          <p>Identificar, evaluar y controlar los peligros presentes en el entorno laboral, implementando medidas preventivas efectivas que protejan la integridad de cada trabajador.</p>
+          <p>Como consultora organizacional, nos enfocamos en las de cada empresa, en las personas, en los equipos, en cómo desde lo humano, podemos incorporar habilidades, construir mejores relaciones y generar mejores resultados. Contamos con una basta cartera de clientes y tenemos más de una década trabajando con organizaciones</p>
         </div>
 
         <div class="objective-card reveal">
@@ -223,8 +242,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
             </svg>
           </div>
-          <h3>Garantizar cumplimiento normativo</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit expedita doloremque maxime in nobis libero suscipit dolorem incidunt eos quas saepe eius id, repellat odio vel velit quia nisi nostrum.</p>
+          <h3>Programas de capacitación organizacional</h3>
+          <p>Impulsamos el talento humano dentro de la organización con estrategias a la medida que fomentan el crecimiento y el desarrollo de su equipo</p>
         </div>
 
         <div class="objective-card reveal">
@@ -234,158 +253,190 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438a2.253 2.253 0 0 1-1.006 2.195l-.148.088a9 9 0 0 1-5.747-1.085" />
             </svg>
           </div>
-          <h3>Promover sostenibilidad ambiental</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, repudiandae at ut excepturi doloremque iste quo dicta consequatur nihil porro, culpa tenetur eum officiis accusamus molestiae esse beatae fuga similique?</p>
+          <h3>Cumplimiento a normas</h3>
+          <p>Garantizamos el cumplimiento normativo de tu empresa con procesos personalizados y certificaciones reconocidas.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========== SERVICES SECTION ========== -->
-  <section id="servicios" class="services">
-    <div class="container">
-      <div class="services-header reveal">
-        <div class="services-header-text">
-          <div class="section-label">Nuestros Servicios</div>
-          <h2>Soluciones especializadas para tu empresa</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis temporibus nihil eaque repellendus ducimus cupiditate praesentium illum vitae provident animi! Aperiam aliquid totam perferendis cupiditate alias, atque officiis quibusdam quo..</p>
-        </div>
-        <a href="#contacto" class="btn btn-primary">
-          Solicitar asesoria
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-          </svg>
-        </a>
+<section id="servicios" class="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <div class="services-header-text">
+        <div class="section-label">Nuestros Servicios</div>
+        <h2>Soluciones especializadas para tu empresa</h2>
+        <p>Gestión integral y consultoría experta para elevar los estándares de tu organización.</p>
       </div>
+      <a href="#contacto" class="btn btn-primary">Solicitar asesoría</a>
+    </div>
 
-      <div class="services-grid stagger-children">
-        <!-- Service 1 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-            </svg>
-          </div>
-          <h3>Capacitacion y Formacion</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi impedit molestiae tenetur. Sit, a? Debitis in officia quisquam corporis pariatur fugiat amet minus, placeat maiores ut, officiis aspernatur quo ducimus.</p>
-          <span class="service-link">
-            Conocer mas
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>
-          </span>
+    <div class="services-grid">
+      <a href="medio-ambiente.html" class="service-card">
+        <div class="service-card-image">
+          <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400&h=300&fit=crop" alt="Medio Ambiente">
         </div>
-
-        <!-- Service 2 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
-            </svg>
-          </div>
-          <h3>Asesoria Tecnica SST</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iste quis illo asperiores voluptates nisi reiciendis blanditiis exercitationem dolores nam ipsa minus veniam dicta culpa, aperiam necessitatibus suscipit adipisci optio.</p>
-          <span class="service-link">
-            Conocer mas
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>
-          </span>
+        <div class="service-card-content">
+          <h3>Medio Ambiente</h3>
+          <p>Gestión integral de residuos y cumplimiento normativo.</p>
         </div>
+      </a>
 
-        <!-- Service 3 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15a2.25 2.25 0 0 1 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
-            </svg>
-          </div>
-          <h3>Auditorias e Inspecciones</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto facere nihil ullam veniam nulla perferendis, quam similique cupiditate cum! Provident quos nobis doloremque praesentium labore molestias quod saepe. Blanditiis.</p>
-          <span class="service-link">
-            Conocer mas
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>
-          </span>
+      <a href="seguridad-industrial.html" class="service-card">
+        <div class="service-card-image">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop" alt="Seguridad Industrial">
         </div>
-
-        <!-- Service 4 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z" />
-            </svg>
-          </div>
-          <h3>Planes de Emergencia</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam corporis unde laboriosam amet ex, voluptatum voluptates dolores fugit magnam hic, quas, libero quod delectus debitis nesciunt similique obcaecati ab. Facere!</p>
-          <span class="service-link">
-            Conocer mas
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>
-          </span>
+        <div class="service-card-content">
+          <h3>Seguridad Industrial</h3>
+          <p>Programas de seguridad y análisis de riesgos.</p>
         </div>
+      </a>
 
-        <!-- Service 5 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438a2.253 2.253 0 0 1-1.006 2.195l-.148.088a9 9 0 0 1-5.747-1.085" />
-            </svg>
-          </div>
-          <h3>Gestion Ambiental</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia nesciunt fugiat rerum vel, tempore accusantium minima, eum similique tempora, maxime ad nostrum iusto. Minus commodi totam ex eaque at tenetur.</p>
-          <span class="service-link">
-            Conocer mas
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>
-          </span>
+      <a href="sistemas-gestion.html" class="service-card">
+        <div class="service-card-image">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Sistemas de Gestión">
         </div>
+        <div class="service-card-content">
+          <h3>Sistemas de Gestión</h3>
+          <p>Implementación de ISO y capacitación especializada.</p>
+        </div>
+      </a>
 
-        <!-- Service 6 -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
-            </svg>
+      <a href="consultoria.html" class="service-card">
+        <div class="service-card-image">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop" alt="Consultoría">
+        </div>
+        <div class="service-card-content">
+          <h3>Consultoría</h3>
+          <p>Asesoría legal, auditorías y acompañamiento.</p>
+        </div>
+      </a>
+
+      <a href="servicios-integrales.html" class="service-card card-wide">
+        <div class="service-card-image">
+          <img src="images/Imagen1.png" alt="Servicios Integrales">
+        </div>
+        <div class="service-card-content">
+          <div>
+            <h3>Servicios Integrales y Proyectos Especiales</h3>
+            <p>Ofrecemos una solución de 360 grados que abarca desde el diagnóstico inicial hasta la ejecución técnica y mantenimiento preventivo en todas las áreas de cumplimiento normativo.</p>
           </div>
-          <h3>Evaluacion de Riesgos</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quae dicta harum error dolores, dolor accusamus, voluptas laborum maiores excepturi aperiam unde quasi ipsum ipsam quisquam temporibus officia illum possimus!</p>
-          <span class="service-link">
-            Conocer mas
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>
-          </span>
+          <span class="service-card-link">Ver detalles del servicio completo →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+   <!-- ========== STATS BANNER ========== -->
+  <section class="stats-banner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <h3><span data-count="5000" data-suffix="">0</span><span class="stat-suffix">+</span></h3>
+          <p>personas han sido impactadas por alguno de nuestros programas.</p>
+        </div>
+        <div class="stat-item reveal">
+          <h3><span data-count="100" data-suffix="">0</span><span class="stat-suffix">+</span></h3>
+          <p>Más de 100 empresas se han capacitado con nosotros</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== CTA SECTION ========== -->
-  <section id="contacto" class="cta">
-    <div class="container">
-      <div class="cta-box reveal">
-        <div class="cta-content">
-          <div class="section-label" style="color: var(--green);">Contactanos</div>
-          <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel minus enim veritatis fugiat quam dolor asperiores natus? Maiores quibusdam odit libero! Sapiente amet a alias modi mollitia quidem, facere, at vitae culpa eaque libero adipisci, architecto eligendi hic ad consequuntur.</p>
-          <div class="cta-actions">
-            <a href="mailto:contacto@avanzasst.com" class="btn btn-green">
-              Solicitar consulta gratuita
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-              </svg>
-            </a>
-            <a href="tel:+525500000000" class="btn btn-white">
-              Llamar ahora
-            </a>
-          </div>
+  <!-- ========== CONTACTO ========== -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                     <h2 class="section-title">Contáctanos</h2>
+                    <p class="section-subtitle">Estamos listos para ayudarte con tus necesidades</p>
+      
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Salesianos 117, Villa Teresa, 20126 Aguascalientes, Ags.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+52 461-197-57-87</p>
+                                <p>+52 449-414-76-81</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <path d="M22 6l-10 7L2 6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contacto@consultoriacispro.com.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             <div class="contact-form-wrapper">
+
+     <form class="contacto-form" id="contact-form">
+
+  <div class="inputbox">
+    <input type="text" name="from_name" required>
+    <span>Nombre</span>
+    <i></i>
+  </div>
+
+  <div class="inputbox">
+    <input type="email" name="reply_to" required>
+    <span>Correo</span>
+    <i></i>
+  </div>
+
+  <div class="inputbox">
+    <input type="tel" name="phone" pattern="[0-9]{10}" required>
+    <span>Teléfono</span>
+    <i></i>
+  </div>
+
+  <div class="inputbox">
+    <input type="text" name="subject" required>
+    <span>Asunto</span>
+    <i></i>
+  </div>
+
+  <div class="inputbox textarea">
+    <textarea name="message" required></textarea>
+    <span>Comentarios</span>
+    <i></i>
+  </div>
+
+  <button type="submit" class="buttonform">Enviar</button>
+</form>
+
+</div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
@@ -394,9 +445,7 @@
         <div class="footer-brand">
           <div class="footer-logo">
             <div class="logo-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-              </svg>
+             <img src="images/icon.ico" alt="">
             </div>
             Avanza SST
           </div>
@@ -435,8 +484,6 @@
           <h4>Servicios</h4>
           <ul>
             <li><a href="#servicios">Capacitacion SST</a></li>
-            <li><a href="#servicios">Asesoria tecnica</a></li>
-            <li><a href="#servicios">Auditorias</a></li>
             <li><a href="#servicios">Planes de emergencia</a></li>
             <li><a href="#servicios">Gestion ambiental</a></li>
           </ul>
@@ -445,15 +492,15 @@
         <div class="footer-column">
           <h4>Contacto</h4>
           <ul>
-            <li><a href="mailto:contacto@avanzasst.com">contacto@avanzasst.com</a></li>
-            <li><a href="tel:+525500000000">+52 55 0000 0000</a></li>
+            <li><a href="mailto:contacto@avanzasst.com"></a></li>
+            <li><a href="tel:+525500000000">+52 449 150 03 76</a></li>
             <li><a href="#">Ciudad de Mexico, Mexico</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Avanza SST. Todos los derechos reservados.</p>
+        <p>2026 ASST. Todos los derechos reservados.</p>
         <div class="footer-bottom-links">
           <a href="#">Aviso de privacidad</a>
           <a href="#">Terminos y condiciones</a>
