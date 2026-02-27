@@ -41,7 +41,6 @@
       });
     }
   
-    // --- Active nav link on scroll ---
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.navbar-links a, .mobile-menu a');
   
@@ -85,7 +84,6 @@
       });
     });
   
-    // --- Scroll reveal animations ---
     const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
   
     function revealOnScroll() {
@@ -103,7 +101,6 @@
     window.addEventListener('scroll', revealOnScroll, { passive: true });
     revealOnScroll();
   
-    // --- Counter animation ---
     const counters = document.querySelectorAll('[data-count]');
     let countersAnimated = false;
   
@@ -148,13 +145,10 @@
     window.addEventListener('scroll', animateCounters, { passive: true });
     animateCounters();
   
-    // --- FIX 2: Metemos la lógica de WhatsApp AQUÍ ADENTRO para que encuentre el botón correctamente ---
     const btnWs = document.getElementById('whatsappBtn');
     const tooltipWs = document.getElementById('whatsappTooltip');
     const phone = '524491500376';
     const wsSections = [
-        { selector: '.volumetricos', message: 'Hola, me gustaría conocer más sobre los controles volumétricos.' },
-        { selector: '.proceso-verificación', message: 'Hola, quiero información sobre sus servicios.' },
         { selector: '.contact', message: 'Hola, me gustaría recibir información.' }
     ];
   
@@ -246,7 +240,7 @@
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
-      if (targetId !== '#' && targetId.startsWith('#')) { // FIX 3: Misma protección para este bloque de código
+      if (targetId !== '#' && targetId.startsWith('#')) { 
         const target = document.querySelector(targetId);
         if (target) {
           e.preventDefault();
@@ -513,3 +507,42 @@
       notify.classList.remove('show');
     }, 3500);
   }
+
+  function incluirHTML() {
+  const cargarSeccion = (url, idContenedor) => {
+    fetch(url)
+      .then(response => {
+        if (!response.ok) throw new Error("No se pudo cargar: " + url);
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById(idContenedor).innerHTML = data;
+      })
+      .catch(error => console.error(error));
+  };
+
+  cargarSeccion('header.html', 'header-placeholder');
+  cargarSeccion('footer.html', 'footer-placeholder');
+}
+
+document.addEventListener("DOMContentLoaded", incluirHTML);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const gridContainer = document.getElementById('normasGrid');
+    const items = gridContainer.querySelectorAll('.norma-item');
+
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            const isExpanded = item.classList.contains('expanded');
+
+            items.forEach(otherItem => {
+                otherItem.classList.remove('expanded');
+            });
+
+            if (!isExpanded) {
+                item.classList.add('expanded');
+            }
+        });
+    });
+});

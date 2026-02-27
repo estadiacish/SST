@@ -28,3 +28,9 @@ Antes de subir los archivos, asegurar tener la versión mas reciente del reposit
 2. "git add." o "git add archivo1.js" para subir los archivos modificados
 3. git commit -m "Agregar commit"
 4.enviar los archivo al repositorio "git push origin main"
+
+...................................
+Listar nombres remotos: Ejecuta git remote para ver solo los nombres (habitualmente origin).
+Listar nombres y URLs: Ejecuta git remote -v para ver el nombre y la dirección web.
+Ver detalles: Usa git remote show origin para obtener información detallada, incluyendo las ramas rastreadas. 
+Si no has clonado el repositorio y necesitas enlazar uno, el nombre del remoto se define al usar git remote add <nombre> <url>. 
