@@ -4,7 +4,6 @@
 
    document.addEventListener('DOMContentLoaded', function () {
 
-    // --- Navbar scroll behavior ---
     const navbar = document.querySelector('.navbar');
     let lastScroll = 0;
   
@@ -21,7 +20,6 @@
     window.addEventListener('scroll', handleNavbarScroll, { passive: true });
     handleNavbarScroll();
   
-    // --- Mobile menu toggle ---
     const mobileToggle = document.querySelector('.mobile-toggle');
     const mobileMenu = document.querySelector('.mobile-menu');
   
@@ -65,15 +63,14 @@
   
     window.addEventListener('scroll', highlightNavLink, { passive: true });
   
-    // --- Smooth scroll for anchor links ---
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
       anchor.addEventListener('click', function (e) {
         const targetId = this.getAttribute('href');
-        if (targetId === '#' || !targetId.startsWith('#')) return; // FIX 1: Evita que URLs externas rompan el scroll
+        if (targetId === '#' || !targetId.startsWith('#')) return; 
   
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
-          e.preventDefault(); // Solo prevenimos el click si el destino existe internamente
+          e.preventDefault(); 
           const navHeight = navbar.offsetHeight;
           const targetPosition = targetElement.offsetTop - navHeight - 20;
           window.scrollTo({
