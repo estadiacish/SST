@@ -3,7 +3,6 @@
    Seguridad, Salud y Medio Ambiente
    ============================================ */
 
-/* --- Reset & Base --- */
 *,
 *::before,
 *::after {
@@ -71,7 +70,6 @@ img {
   padding: 0 24px;
 }
 
-/* --- Typography --- */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -88,7 +86,6 @@ p {
   color: white;
 }
 
-/* --- Section Label --- */
 .section-label {
   display: inline-flex;
   align-items: center;
@@ -109,7 +106,6 @@ p {
   background-color: var(--green);
 }
 
-/* --- Buttons --- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -351,7 +347,6 @@ p {
   font-size: 0.85rem;
 }
 
-/* Mobile menu */
 .mobile-toggle {
   display: none;
   flex-direction: column;
@@ -519,7 +514,6 @@ p {
   margin-top: 4px;
 }
 
-/* Hero Visual */
 .hero-visual {
   position: relative;
   display: flex;
@@ -688,7 +682,6 @@ p {
   aspect-ratio: 4/3;
 }
 
-/* El CSS de tu imagen se queda IGUAL */
 .about-image-wrapper img {
   display: block;
   width: 100%;
@@ -710,7 +703,6 @@ p {
   border-radius: 12px;
 }
 
-/* force a fixed aspect ratio when the container has one */
 .service-card-image,
 .large-card-image,
 .small-card-image,
@@ -1016,7 +1008,6 @@ p {
 
 .services-grid {
   display: grid;
-  /* show all four cards side‑by‑side on desktop */
   grid-template-columns: repeat(4, 1fr);
   gap: 28px;
 }
@@ -1168,28 +1159,24 @@ p {
   justify-content: center;
 }
 
-/* --- RESPONSIVIDAD --- */
-
-/* Tablets (1024px o menos) */
 @media (max-width: 1024px) {
   .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-columns: repeat(2, 1fr); 
   }
   
   .service-card.card-wide {
-    grid-column: span 2; /* Ocupa 2 columnas en tablet */
+    grid-column: span 2; 
   }
 }
 
-/* Móviles (768px o menos) */
 @media (max-width: 768px) {
   .services-grid {
-    grid-template-columns: 1fr; /* 1 sola columna */
+    grid-template-columns: 1fr; 
   }
 
   .service-card.card-wide {
     grid-column: span 1;
-    flex-direction: column; /* Vuelve a ser vertical en móvil */
+    flex-direction: column;
   }
 
   .service-card.card-wide .service-card-image {
@@ -1204,7 +1191,6 @@ p {
   }
 }
 
-/* Fix para imágenes */
 .service-card-image img {
   width: 100%;
   height: 100%;
@@ -1233,10 +1219,9 @@ p {
 
 .stats-grid {
   display: grid;
-  /* auto-fit allows items to wrap and stay centered on narrow screens */
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
-  justify-content: center; /* center the grid inside its container */
+  justify-content: center;
   position: relative;
   z-index: 1;
 }
@@ -1275,7 +1260,6 @@ p {
   font-weight: 500;
 }
 
-/* responsive tweaks */
 @media (max-width: 768px) {
   .stats-banner {
     padding: 60px 0;
@@ -1511,7 +1495,6 @@ p {
   transform: translateX(0);
 }
 
-/* stagger children */
 .stagger-children .reveal:nth-child(1) { transition-delay: 0s; }
 .stagger-children .reveal:nth-child(2) { transition-delay: 0.1s; }
 .stagger-children .reveal:nth-child(3) { transition-delay: 0.2s; }
@@ -1596,7 +1579,6 @@ p {
   }
 
   .services-grid {
-    /* two columns on medium screens (≤1024px) */
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1733,7 +1715,6 @@ p {
 
 /* ===== 1. VARIABLES CSS ===== */
 :root {
-  /* Legacy (Codigo 2) tokens mapped to primary theme */
   --color-primary: var(--blue);
   --color-primary-dark: var(--blue-dark);
   --color-primary-light: var(--blue-light);
@@ -1751,13 +1732,11 @@ p {
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-heading: 'Inter', sans-serif;
 
-  /* Prevent Codigo 2 from overriding primary shadows/transition */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.12);
 
-  /* Legacy radius scale tuned to primary look */
   --radius-sm: 8px;
   --radius-md: 10px;
   --radius-lg: 12px;
@@ -2316,7 +2295,6 @@ p {
     align-items: center;
 }
 
-/* --- Estilo de la Imagen --- */
 .image-wrapper {
     position: relative;
     border-radius: 30px;
@@ -2353,16 +2331,15 @@ p {
     line-height: 1;
 }
 
-/* --- Texto y Contenido --- */
 .main-title {
     font-size: 2.8rem;
     line-height: 1.1;
     margin-bottom: 10px;
-    color: #003366; /* Azul corporativo */
+    color: #003366; 
 }
 
 .main-title span {
-    color: #8cd258; /* Verde de tu logo */
+    color: #8cd258; 
     display: block;
 }
 
@@ -2380,7 +2357,6 @@ p {
     color: #444;
 }
 
-/* --- Cuadro de Resalte (Tailored Box) --- */
 .tailored-box {
     display: flex;
     align-items: center;
@@ -2420,7 +2396,6 @@ p {
     box-shadow: 0 10px 20px rgba(140, 210, 88, 0.3);
 }
 
-/* Responsive */
 @media (max-width: 992px) {
     .training-grid {
         grid-template-columns: 1fr;
@@ -2478,7 +2453,6 @@ p {
   text-align: center;
 }
 
-/* Estilos para la sección de invitación ESR */
 .esr-invitation-container {
   margin-top: 30px;
   padding-top: 20px;
@@ -2515,7 +2489,7 @@ p {
 
 .esr-column {
   flex: 1;
-  min-width: 250px; /* Asegura que en móvil se apilen */
+  min-width: 250px; 
   text-align: left;
 }
 
@@ -2704,7 +2678,6 @@ p {
   color: var(--color-text-light);
 }
 
-/* Estilo para el encabezado de la categoría */
 .faq-category-header {
   display: flex;
   justify-content: space-between;
@@ -2715,34 +2688,29 @@ p {
 }
 
 .faq-category-header .faq-category-title {
-  border-bottom: none; /* Quitamos el borde del título original */
+  border-bottom: none; 
   margin-bottom: 0;
 }
 
-/* El contenido de la categoría empieza oculto */
 .faq-category-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
-  padding-top: 5px; /* Pequeño respiro */
+  padding-top: 5px; 
 }
 
-/* Clase activa para mostrar la sección */
 .faq-category.section-active .faq-category-content {
-  max-height: 2000px; /* Un valor alto para que quepan todas las FAQs */
+  max-height: 2000px; 
 }
 
-/* Rotación del icono de categoría */
 .faq-category.section-active .category-icon {
   transform: rotate(180deg);
 }
 
-/* Animate individual faq items when the category opens */
 .faq-category .faq-item {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 360ms ease, transform 360ms ease;
-  /* allow per-item stagger via --i variable (set by JS) */
   transition-delay: calc(var(--i, 0) * 80ms);
 }
 
@@ -2751,9 +2719,7 @@ p {
   transform: translateY(0);
 }
 
-/* Smoothly expand category content height while leaving internal items free to animate */
 .faq-category.section-active .faq-category-content {
-  /* keep a high max-height to allow internal expansion */
   max-height: 2000px;
   transition: max-height 520ms cubic-bezier(.2,.9,.2,1);
 }
@@ -2877,8 +2843,6 @@ CONTACTO PROFESIONAL MODERNO
     align-items: start;
 }
 
-/* Lado izquierdo */
-
 .contact-info {
     padding-top: 10px;
 }
@@ -2916,8 +2880,6 @@ CONTACTO PROFESIONAL MODERNO
     justify-content: center;
 }
 
-/* Formulario */
-
 .contact-form-wrapper {
     background: white;
     padding: 45px;
@@ -2929,8 +2891,6 @@ CONTACTO PROFESIONAL MODERNO
 .contact-form-wrapper:hover {
     transform: translateY(-5px);
 }
-
-/* Inputs modernos */
 
 .inputbox {
     position: relative;
@@ -2969,8 +2929,6 @@ CONTACTO PROFESIONAL MODERNO
     resize: vertical;
 }
 
-/* Botón PRO */
-
 .buttonform {
     width: 100%;
     background: linear-gradient(90deg,#2563eb,#1d4ed8);
@@ -2988,16 +2946,12 @@ CONTACTO PROFESIONAL MODERNO
     box-shadow: 0 10px 20px rgba(37,99,235,.3);
 }
 
-/* Responsive */
-
 @media(max-width:900px){
     .contact-grid{
         grid-template-columns:1fr;
     }
 }
 
-
-/* --- Responsive --- */
 @media (max-width: 992px) {
     .contact-grid {
         grid-template-columns: 1fr;
@@ -3019,7 +2973,6 @@ CONTACTO PROFESIONAL MODERNO
     }
 }
 
-/* ===== FOOTER ===== */
 .footer {
   padding: 80px 0 0;
   background-color: var(--dark);
@@ -3034,7 +2987,6 @@ CONTACTO PROFESIONAL MODERNO
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Support alternate footer markup (`a.logo`) used in imported pages */
 .footer .logo {
   display: flex;
   align-items: center;
@@ -3190,7 +3142,6 @@ CONTACTO PROFESIONAL MODERNO
   gap: 2rem;
 }
 
-/* ===== SIX CARDS GRID ===== */
 .six-cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -3390,7 +3341,7 @@ CONTACTO PROFESIONAL MODERNO
 .whatsapp-float {
   position: fixed;
   bottom: 30px;
-  right: 30px; /* Posicionado a la derecha */
+  right: 30px;
   text-decoration: none;
   z-index: 9999;
   font-family: Arial, sans-serif;
@@ -3404,7 +3355,6 @@ CONTACTO PROFESIONAL MODERNO
   transform: scale(1.02);
 }
 
-/* Globo de texto superior */
 .whatsapp-speech-bubble {
   background: white;
   color: #333;
@@ -3427,19 +3377,17 @@ CONTACTO PROFESIONAL MODERNO
   border-color: white transparent transparent;
 }
 
-/* Cuerpo principal (barra verde) */
 .whatsapp-card-body {
   background: #25d366;
   display: flex;
   align-items: center;
   padding: 10px 20px 10px 10px;
-  border-radius: 15px 50px 15px 15px; /* Estilo redondeado asimétrico */
+  border-radius: 15px 50px 15px 15px;
   min-width: 280px;
   position: relative;
   box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
 }
 
-/* Círculo del icono */
 .whatsapp-icon-circle {
   width: 55px;
   height: 55px;
@@ -3460,7 +3408,6 @@ CONTACTO PROFESIONAL MODERNO
   z-index: 2;
 }
 
-/* Textos internos */
 .whatsapp-info {
   display: flex;
   flex-direction: column;
@@ -3478,7 +3425,6 @@ CONTACTO PROFESIONAL MODERNO
   margin: 2px 0 5px 0;
 }
 
-/* Botón "Estoy en línea" */
 .whatsapp-status-badge {
   background: rgba(255, 255, 255, 0.2);
   padding: 4px 12px;
@@ -3488,7 +3434,6 @@ CONTACTO PROFESIONAL MODERNO
   border: 1px solid rgba(255,255,255,0.3);
 }
 
-/* Notificación roja */
 .whatsapp-notif-badge {
   position: absolute;
   top: -5px;
@@ -3506,7 +3451,6 @@ CONTACTO PROFESIONAL MODERNO
   border: 2px solid white;
 }
 
-/* Efecto Pulso mejorado */
 .whatsapp-pulse {
   position: absolute;
   width: 100%;
@@ -3521,14 +3465,13 @@ CONTACTO PROFESIONAL MODERNO
   100% { transform: scale(1.4); opacity: 0; }
 }
 
-/* Responsive */
 @media (max-width: 480px) {
   .whatsapp-card-body {
     min-width: auto;
     padding: 8px 15px 8px 8px;
   }
   .whatsapp-main-text { font-size: 13px; }
-  .whatsapp-speech-bubble { display: none; } /* Ocultar burbuja en móvil para no tapar contenido */
+  .whatsapp-speech-bubble { display: none; } 
 }
 
 /*=================certificación============================*/
@@ -3556,21 +3499,19 @@ CONTACTO PROFESIONAL MODERNO
   background: #8cd258;
 }
 
-/* Contenedor principal del gráfico */
 .graph-wrapper {
   position: relative;
-  height: 400px; /* Altura fija para que no se colapse */
+  height: 400px; 
   margin: 50px auto;
   max-width: 900px;
 }
 
-/* Líneas de fondo y números laterales */
 .graph-grid-bg {
   position: absolute;
   top: 0;
-  left: 50px; /* Espacio para los números */
+  left: 50px; 
   right: 0;
-  bottom: 40px; /* Espacio para etiquetas inferiores */
+  bottom: 40px; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -3591,7 +3532,6 @@ CONTACTO PROFESIONAL MODERNO
   font-size: 14px;
 }
 
-/* Contenedor de barras */
 .bars-container {
   position: absolute;
   top: 0;
@@ -3600,7 +3540,7 @@ CONTACTO PROFESIONAL MODERNO
   bottom: 40px;
   display: flex;
   justify-content: space-around;
-  align-items: flex-end; /* Alinea las barras al suelo */
+  align-items: flex-end; 
   z-index: 2;
 }
 
@@ -3622,13 +3562,11 @@ CONTACTO PROFESIONAL MODERNO
   cursor: pointer;
 }
 
-/* Colores de las barras */
 .bar-dark { background: #0a2339; }
 .bar-medium { background: #235275; }
 .bar-light { background: #4a8bbd; }
 .bar-accent { background: #3498db; }
 
-/* Tooltip profesional */
 .bar-actual:hover {
   filter: brightness(1.2);
   transform: scaleX(1.05);
@@ -3645,7 +3583,7 @@ CONTACTO PROFESIONAL MODERNO
   padding: 10px;
   border-radius: 4px;
   font-size: 12px;
-  white-space: pre; /* Permite el salto de línea del &#10; */
+  white-space: pre; 
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
@@ -3658,7 +3596,6 @@ CONTACTO PROFESIONAL MODERNO
   visibility: visible;
 }
 
-/* Números sobre las barras */
 .bar-number {
   position: absolute;
   top: -25px;
@@ -3668,7 +3605,6 @@ CONTACTO PROFESIONAL MODERNO
   color: #333;
 }
 
-/* Etiquetas inferiores */
 .bar-label {
   position: absolute;
   bottom: -30px;
@@ -3801,7 +3737,6 @@ CONTACTO PROFESIONAL MODERNO
     transition: 0.3s;
 }
 
-/* Ajuste para Móviles */
 @media (max-width: 992px) {
     .normas-card-large {
         grid-template-columns: 1fr;
@@ -3832,7 +3767,7 @@ CONTACTO PROFESIONAL MODERNO
     font-size: 1.2rem;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #8cd258; /* Verde CISPRO */
+    color: #8cd258; 
     text-transform: uppercase;
 }
 
@@ -3841,7 +3776,6 @@ CONTACTO PROFESIONAL MODERNO
     color: rgba(255,255,255,0.3);
 }
 
-/* --- Grid de Círculos --- */
 .circles-wrapper {
     display: flex;
     justify-content: center;
@@ -3889,21 +3823,18 @@ CONTACTO PROFESIONAL MODERNO
     line-height: 1.3;
 }
 
-/* Efecto Hover */
 .stat-circle:hover {
     transform: scale(1.1) translateY(-10px);
     background: rgba(255, 255, 255, 0.2);
     border-color: #8cd258;
 }
 
-/* Animación de Flotado */
 @keyframes floating {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-15px); }
     100% { transform: translateY(0px); }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .stat-circle {
         width: 180px;
@@ -3911,7 +3842,6 @@ CONTACTO PROFESIONAL MODERNO
     }
 }
 
-/* Contenedor Principal */
 .esr-v2-wrapper {
     padding: 80px 0;
     background-color: #f8fafc;
@@ -3924,7 +3854,6 @@ CONTACTO PROFESIONAL MODERNO
     padding: 0 20px;
 }
 
-/* Tarjeta Hero (Certificación) */
 .esr-v2-hero-card {
     background: #ffffff;
     border-radius: 20px;
@@ -3967,7 +3896,6 @@ CONTACTO PROFESIONAL MODERNO
     filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
 }
 
-/* Sección Invitación */
 .esr-v2-invitation {
     text-align: center;
     max-width: 800px;
@@ -3991,7 +3919,6 @@ CONTACTO PROFESIONAL MODERNO
     color: #8cd258;
 }
 
-/* Grid de Categorías */
 .esr-v2-categories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -4029,7 +3956,6 @@ CONTACTO PROFESIONAL MODERNO
     line-height: 1.5;
 }
 
-/* Icon Placeholders (Reemplazar con tus iconos) */
 .esr-v2-cat-icon {
     width: 60px;
     height: 60px;
@@ -4045,7 +3971,6 @@ CONTACTO PROFESIONAL MODERNO
 .icon-pyme::before { content: '🏗️'; font-size: 1.5rem; }
 .icon-grande::before { content: '🌆'; font-size: 1.5rem; }
 
-/* Responsive */
 @media (max-width: 768px) {
     .esr-v2-hero-grid { grid-template-columns: 1fr; text-align: center; }
     .esr-v2-hero-img { order: -1; }
